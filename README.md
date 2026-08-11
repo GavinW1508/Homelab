@@ -2,7 +2,7 @@
 Occasional progress updates on my Homelab:
 
 # First iteration
-<img width="1920" height="1080" alt="IMG_3025" src="https://github.com/user-attachments/assets/57ae2d27-de39-4e45-9ff2-5eaa9cba518e" />
+<img width="3024" height="4032" alt="IMG_3025" src="https://github.com/user-attachments/assets/57ae2d27-de39-4e45-9ff2-5eaa9cba518e" />
 
 # Second iteration
 <img width="1384" height="2563" alt="IMG_3288" src="https://github.com/user-attachments/assets/5a800b01-eb36-4a36-b10c-58b97bbcb397" />
