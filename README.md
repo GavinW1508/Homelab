@@ -119,8 +119,6 @@ flowchart TB
 | 20 | VMS | Service VMs (static IPs assigned above the DHCP pool) |
 | 30 | MGMT | Security tooling; isolated from the VM VLAN |
 
-Every Proxmox node uses VLAN-aware bridges, so any VM can be placed on any VLAN without touching the physical network.
-
 ---
 
 ## Security Design
