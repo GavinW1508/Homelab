@@ -270,7 +270,7 @@ Day-to-day work is tracked as tickets in Linear (categorized as Problems, Securi
 - [x] Deploy Wazuh SIEM
 - [x] Rack environmental monitoring
 - [x] Offsite backups
-- [ ] Roll out Wazuh agents across every host and VM (firewall, fail2ban, SSH/auth logs)
+- [X] Roll out Wazuh agents across every host and VM (firewall, fail2ban, SSH/auth logs)
 - [ ] Scheduled vulnerability scans with results feeding the SIEM
 - [ ] Open-source antivirus with alerts forwarded to the SIEM
 - [ ] Pentest lab on `ESX46`: GOAD (Active Directory), DVWA, and Metasploitable behind an OPNsense gateway VM
