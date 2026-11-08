@@ -28,7 +28,7 @@ It runs real services every day and doubles as my lab for network security, dete
 - **5 physical servers:** a Proxmox VE cluster plus a dedicated Proxmox Backup Server
 - **3 VLANs** separating servers, virtual machines, and management
 - **Defense in depth:** perimeter zone firewall, Proxmox datacenter/node/VM firewalls, and a host firewall inside every guest
-- **Minimal attack surface:** one service is internet-facing; every admin interface is reachable only over Tailscale
+- **Minimal attack surface:** one service is internet-facing; every admin interface is only reachable only over Tailscale
 - **Wazuh SIEM** on an isolated management VLAN
 - **MFA** on the hypervisor web UI and user-facing services
 - **Rack environmental monitoring** (intake/exhaust temperature and humidity) in Grafana
@@ -39,10 +39,11 @@ It runs real services every day and doubles as my lab for network security, dete
 1. 24-port Cat6 patch panel
 2. UniFi 24-port switch
 3. UniFi Dream Machine Pro
-4. Shelf: PiKVM (Raspberry Pi 4B), APC Back-UPS Pro 1500
+4. Shelf: PiKVM (Raspberry Pi 4B), Dell Precision Tower 3420, APC UPS Battery Backup Pro
 5. HP ProLiant DL380 (`ESX46`)
 6. HP ProLiant DL380 (`ESX45`)
-7. Dell Precision 5820 and Dell PowerEdge towers
+7. Dell Precision 5820
+8. Dell PowerEdge T320
 
 </td>
 </tr>
@@ -55,7 +56,7 @@ It runs real services every day and doubles as my lab for network security, dete
 | Host | Hardware | Role |
 |---|---|---|
 | `PowerEdge` | Dell PowerEdge | Proxmox node, NFS storage server (shared backup and media storage) |
-| `Precision-5820` | Dell Precision 5820 | Proxmox node, general compute |
+| `Precision-5820` | Dell Precision 5820 | Proxmox node, AI server |
 | `ESX45` | HP ProLiant DL380 | Proxmox node, **defensive node** (hosts the SIEM), Tailscale subnet router |
 | `ESX46` | HP ProLiant DL380 | Proxmox node, **offensive node** (reserved for the isolated pentest lab) |
 | `GW-homelab` | NVMe-backed server | Dedicated Proxmox Backup Server |
@@ -63,8 +64,6 @@ It runs real services every day and doubles as my lab for network security, dete
 | Switching | UniFi 24-port switch | VLAN assignment for every port |
 | Out-of-band | PiKVM (Raspberry Pi 4B) | Remote console access, built myself |
 | Power | APC Back-UPS Pro 1500 | Battery backup for networking and servers |
-
-Cabling uses 6-inch patch cables with a strict 1:1 port mapping (patch panel, switch, then gateway, mounted directly adjacent). All VLAN assignment is handled in the switch config, so the physical layer never changes when the logical design does.
 
 ---
 
