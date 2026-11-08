@@ -284,7 +284,6 @@ Day-to-day work is tracked as tickets in Linear (categorized as Problems, Securi
 
 **Hardening**
 
-- [ ] Disable root login across all VMs
 - [ ] Tighten the Servers to Management zone policy in UniFi
 - [ ] Dedicated lab groups for `ESX46` in Wazuh and UniFi
 
