@@ -261,7 +261,6 @@ Day-to-day work is tracked as tickets in Linear (categorized as Problems, Securi
 **Fix:** The secret file needed `root:root` ownership with `640` permissions to match the container's GID 0.<br>
 **Takeaway:** File-based secrets are worth the setup, but container UID/GID mapping has to be planned for.
 </details>
----
 
 ## Roadmap
 
