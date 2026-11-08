@@ -88,7 +88,7 @@ flowchart TB
         auto["media-automation"]
         files["file-storage<br/>Nextcloud"]
         ai["ai-server"]
-        mgmt["mgmt-01<br/>admin tooling"]
+        mgmt["management<br/>administration tools"]
         npm --> media
     end
 
